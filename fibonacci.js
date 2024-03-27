@@ -19,3 +19,5 @@ function fabonacci(n) {
 }
 
 console.log(fabonacci(13))
+
+// Big-O = O(n)
