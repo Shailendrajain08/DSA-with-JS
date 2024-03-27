@@ -18,4 +18,4 @@ function fabonacci(n) {
     return fab
 }
 
-console.log(fabonacci(9))
+console.log(fabonacci(13))
