@@ -1,4 +1,4 @@
-// Problem :- Write a Javascript program in which give a number 'n', find the fist 'n' of fabonacci sequence. 
+// Problem :- Write a Javascript program in which give a number 'n', find the first 'n' of fabonacci sequence. 
 
 // In Mathematics, the fabonacci sequence is a sequence in which each number is the sum of the two preceding ones. 
 // Ex:- 
