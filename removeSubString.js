@@ -1,5 +1,5 @@
-// Function definition
-function removeSubstring(str1, str2) {
+// Function to find the longest common substring
+function longestCommonSubstring(str1, str2) {
     let maxLength = 0;
     let endIndex = 0;
 
@@ -18,7 +18,7 @@ function removeSubstring(str1, str2) {
             // If we found a longer common substring, update maxLength and endIndex
             if (k > maxLength) {
                 maxLength = k;
-                endIndex = i;
+                endIndex = i + k - 1;
             }
         }
     }
@@ -27,8 +27,17 @@ function removeSubstring(str1, str2) {
     return str1.substring(endIndex - maxLength + 1, endIndex + 1);
 }
 
+// Function to remove common substring from a given string
+function removeCommonSubstring(str, commonSubstring) {
+    return str.replace(commonSubstring, '');
+}
+
 // Example usage
 const str1 = "abcdef";
 const str2 = "xbcdeft";
-console.log("Longest Common Substring:", removeSubstring(str1, str2)); // Output: "ab"
+const commonSubstring = longestCommonSubstring(str1, str2);
+const str1AfterRemoval = removeCommonSubstring(str1, commonSubstring);
+const str2AfterRemoval = removeCommonSubstring(str2, commonSubstring);
 
+console.log("String 1 after removal:", str1AfterRemoval);
+console.log("String 2 after removal:", str2AfterRemoval);
