@@ -1,3 +1,5 @@
+// Problem :- write a JS code to remove common substring from a given string.
+
 // Function to find the longest common substring
 function longestCommonSubstring(str1, str2) {
     let maxLength = 0;
